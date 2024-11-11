@@ -1,0 +1,38 @@
+header {
+    background-color: #f9f6f5;
+}
+
+.header {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    height: 80px;
+    background-color: transparent;
+    padding: 0 100px;
+    justify-content: space-between;
+    &_logo {
+        font-size: 24px;
+        font-style: italic;
+        font-weight: bold;
+        text-decoration: underline;
+        color: #222222;
+    }
+
+    &_menu {
+        display: flex;
+        gap: 40px;
+        &-item {
+            font-size: 16px;
+            line-height: 20px;
+            color: #222222;
+        }
+    }
+
+    &_icons {
+        display: flex;
+        gap: 24px;
+        &-item {
+        }
+    }
+}

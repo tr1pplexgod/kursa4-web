@@ -1,0 +1,113 @@
+.reviews {
+    padding: 0px 100px;
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    align-items: center;
+    margin-bottom: 130px;
+
+    &_info {
+        position: relative;
+        &-title {
+            font-size: 30px;
+            line-height: 40px;
+            font-weight: 500;
+            margin-bottom: 12px;
+        }
+
+        &-rate {
+            margin-bottom: 43px;
+        }
+
+        &-description {
+            position: relative;
+            font-size: 20px;
+            line-height: 32px;
+            color: #555555;
+
+            margin-bottom: 80px;
+
+            &::before {
+                position: absolute;
+                content: url("/kursova/assets/svg/openarrows.svg");
+                top: -5px;
+                left: -20px;
+            }
+
+            &::after {
+                position: absolute;
+                content: url("/kursova/assets/svg/closearrows.svg");
+                bottom: 5px;
+            }
+        }
+
+        &-name {
+            font-size: 30px;
+            line-height: 40px;
+            font-weight: 500;
+        }
+
+        &-job {
+            font-size: 20px;
+            line-height: 32px;
+            color: #555555;
+        }
+    }
+}
+
+.reviews-slider {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.reviews {
+    display: none;
+    padding: 0px 100px;
+    align-items: center;
+}
+
+.reviews.active {
+    display: flex;
+}
+
+.reviews_img img {
+    height: 511px;
+    width: 538px;
+    object-fit: contain;
+}
+
+.reviews_buttons-wrapper {
+    bottom: -70px;
+    position: absolute;
+    display: flex;
+    gap: 30px;
+}
+
+.prev {
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    background: none;
+    color: #38b100;
+
+    &:hover {
+        border-radius: 50%;
+        border: 1px solid #38b100;
+    }
+}
+
+.next {
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    background: none;
+    color: #38b100;
+
+    &:hover {
+        border-radius: 50%;
+        border: 1px solid #38b100;
+    }
+}

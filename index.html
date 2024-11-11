@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/kursova/sass/css/styles.min.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+            integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"
+            rel="stylesheet"
+        />
+        <title>Dudeshape</title>
+    </head>
+    <body>
+        <header>
+            <div class="header">
+                <div class="header_logo"><a href="/">Dudeshape</a></div>
+                <ul class="header_menu burger-menu">
+                    <li class="header_menu-item"><a href="/">Home</a></li>
+                    <li class="header_menu-item">
+                        <a href="/products.html">Products</a>
+                    </li>
+                    <li class="header_menu-item"><a href="">About Us</a></li>
+                    <li class="header_menu-item"><a href="">Contact Us</a></li>
+                </ul>
+                <ul class="header_icons">
+                    <li class="header_icons-item">
+                        <img
+                            src="/kursova/assets/svg/Profile.svg"
+                            alt="account"
+                        />
+                    </li>
+                    <li class="header_icons-item">
+                        <img src="/kursova/assets/svg/Buy.svg" alt="cart" />
+                    </li>
+                    <li class="header_icons-item">
+                        <img
+                            class="burger"
+                            src="/kursova/assets/svg/Burger.svg"
+                            alt="burger"
+                            onclick="toggleMenu()"
+                        />
+                    </li>
+                </ul>
+            </div>
+
+            <div
+                id="burger-overlay"
+                class="burger-overlay"
+                onclick="toggleMenu()"
+            >
+                <nav class="burger-nav">
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/products.html">Products</a></li>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main class="main">
+            <div class="main_info">
+                <h1 class="main_title">Get Your Best Cosmetic Products Here</h1>
+                <div class="main_subtitle">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy
+                </div>
+                <div class="main_search">
+                    <input
+                        class="main_search-input"
+                        type="text"
+                        placeholder="Search..."
+                    />
+                    <button class="btn-brown search-btn">
+                        <img
+                            class="main_search-img"
+                            src="/kursova/assets/svg/Search.svg"
+                            alt="search"
+                        />
+                    </button>
+                </div>
+                <a href="/products.html"
+                    ><button class="btn btn-brown main_button">
+                        Shop Now
+                    </button></a
+                >
+            </div>
+            <div class="main_img">
+                <img
+                    src="/kursova/assets/img/main/main.jpg"
+                    alt="main_cosmetics"
+                />
+            </div>
+        </main>
+
+        <section class="infinity">
+            <ul class="infinity_list">
+                <li class="infinity_list-item">
+                    <img
+                        src="/kursova/assets/img/infinity/Airbnb Logo.png"
+                        alt=""
+                    />
+                </li>
+                <li class="infinity_list-item">
+                    <img
+                        src="/kursova/assets/img/infinity/Hubspot Logo.png"
+                        alt=""
+                    />
+                </li>
+                <li class="infinity_list-item">
+                    <img
+                        src="/kursova/assets/img/infinity/Google Logo.png"
+                        alt=""
+                    />
+                </li>
+                <li class="infinity_list-item">
+                    <img
+                        src="/kursova/assets/img/infinity/Microsoft Logo.png"
+                        alt=""
+                    />
+                </li>
+                <li class="infinity_list-item">
+                    <img
+                        src="/kursova/assets/img/infinity/Walmart Logo.png"
+                        alt=""
+                    />
+                </li>
+                <li class="infinity_list-item">
+                    <img
+                        src="/kursova/assets/img/infinity/FedEx Logo.png"
+                        alt=""
+                    />
+                </li>
+                <!-- Дублікат елементів для безкінечності -->
+                <li class="infinity_list-item">
+                    <img
+                        src="/kursova/assets/img/infinity/Airbnb Logo.png"
+                        alt=""
+                    />
+                </li>
+                <li class="infinity_list-item">
+                    <img
+                        src="/kursova/assets/img/infinity/Hubspot Logo.png"
+                        alt=""
+                    />
+                </li>
+                <li class="infinity_list-item">
+                    <img
+                        src="/kursova/assets/img/infinity/Google Logo.png"
+                        alt=""
+                    />
+                </li>
+                <li class="infinity_list-item">
+                    <img
+                        src="/kursova/assets/img/infinity/Microsoft Logo.png"
+                        alt=""
+                    />
+                </li>
+                <li class="infinity_list-item">
+                    <img
+                        src="/kursova/assets/img/infinity/Walmart Logo.png"
+                        alt=""
+                    />
+                </li>
+                <li class="infinity_list-item">
+                    <img
+                        src="/kursova/assets/img/infinity/FedEx Logo.png"
+                        alt=""
+                    />
+                </li>
+            </ul>
+        </section>
+
+        <section class="products">
+            <h2 class="products_title">Our Porular Product</h2>
+            <div class="products_info">
+                <div class="products_info-subtitles">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry.<br />
+                    Lorem Ipsum has been the industry's standard dummy
+                </div>
+                <div class="products_info-linker">
+                    <div class="products_info-linker-link">
+                        <a href="/products.html">Discover Our Products</a>
+                    </div>
+                    <img
+                        src="/kursova/assets/svg/Arrow_right.svg"
+                        alt="arrow_right"
+                    />
+                </div>
+            </div>
+            <div class="products_list">
+                <div class="products_list-item">
+                    <img
+                        src="/kursova/assets/img/products/product1.jpg"
+                        alt="product1"
+                    />
+                    <div class="products_list-item-wrapper">
+                        <div class="products_list-item-title">
+                            Cosmetic products
+                        </div>
+                        <div class="products_list-item-subtitle">
+                            Lorem Ipsum is simply dummy text of the printing and
+                            typesetting industry. Lorem Ipsum has been the
+                            industry's standard dummy
+                        </div>
+                        <div class="products_list-item-footer">
+                            <div class="products_list-item-footer-buttons">
+                                <button class="btn btn-brown">Buy Now</button>
+                                <button class="btn btn-light">
+                                    Add To Cart
+                                </button>
+                            </div>
+                            <div class="products_list-item-footer-price">
+                                $120
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="products_list-item">
+                    <img
+                        src="/kursova/assets/img/products/product2.jpg"
+                        alt="product2"
+                    />
+                    <div class="products_list-item-wrapper">
+                        <div class="products_list-item-title">
+                            Cosmetic products
+                        </div>
+                        <div class="products_list-item-subtitle">
+                            Lorem Ipsum is simply dummy text of the printing and
+                            typesetting industry. Lorem Ipsum has been the
+                            industry's standard dummy
+                        </div>
+                        <div class="products_list-item-footer">
+                            <div class="products_list-item-footer-buttons">
+                                <button class="btn btn-brown">Buy Now</button>
+                                <button class="btn btn-light">
+                                    Add To Cart
+                                </button>
+                            </div>
+                            <div class="products_list-item-footer-price">
+                                $120
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="stat">
+            <div class="stat_list" id="stats">
+                <div class="stat_list-item">
+                    <div class="stat_list-item-title" id="organic">0</div>
+                    <div class="stat_list-item-subtitle">Organic Products</div>
+                </div>
+                <div class="stat_list-item">
+                    <div class="stat_list-item-title" id="sales">0</div>
+                    <div class="stat_list-item-subtitle">Yearly Sales</div>
+                </div>
+                <div class="stat_list-item">
+                    <div class="stat_list-item-title" id="customers">0</div>
+                    <div class="stat_list-item-subtitle">Happy Customers</div>
+                </div>
+            </div>
+        </section>
+        <section class="beauty">
+            <div class="beauty_info">
+                <h2 class="beauty_info-title">The Perfect Beauty Of You</h2>
+                <div class="beauty_info-description">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s, when an unknown
+                    printer took a galley of type and scrambled it to make a
+                    type specimen book.
+                </div>
+                <div class="beauty_info-description">
+                    It has survived not only five centuries, but also the leap
+                    into electronic typesetting, remaining essentially
+                    unchanged. Lorem Ipsum is simply dummy text of the printing
+                    and typesetting industry.
+                </div>
+                <button class="btn btn-brown open-modal">
+                    Order a consultation
+                </button>
+            </div>
+            <div class="beauty_img">
+                <img
+                    src="/kursova/assets/img/products/beauty.jpg"
+                    alt="beauty"
+                />
+            </div>
+        </section>
+        <section class="reviews-slider">
+            <div class="reviews">
+                <div class="reviews_img">
+                    <img src="/kursova/assets/img/rest/girl.jpg" alt="girl" />
+                </div>
+                <div class="reviews_info">
+                    <div class="reviews_info-title">Amazing Cosmetic</div>
+                    <div class="reviews_info-rate">
+                        <img
+                            src="/kursova/assets/img/rest/stars.png"
+                            alt="rate"
+                        />
+                    </div>
+                    <div class="reviews_info-description">
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry.
+                    </div>
+                    <div class="reviews_info-name">Rusmin Islam</div>
+                    <div class="reviews_info-job">Designer</div>
+                    <div class="reviews_buttons-wrapper">
+                        <button class="prev" onclick="moveSlide(-1)">
+                            &#10094;
+                        </button>
+                        <button class="next" onclick="moveSlide(1)">
+                            &#10095;
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="reviews">
+                <div class="reviews_img">
+                    <img
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Outdoors-man-portrait_%28cropped%29.jpg/1200px-Outdoors-man-portrait_%28cropped%29.jpg"
+                        alt="girl"
+                    />
+                </div>
+                <div class="reviews_info">
+                    <div class="reviews_info-title">Great Service</div>
+                    <div class="reviews_info-rate">
+                        <img
+                            src="/kursova/assets/img/rest/stars.png"
+                            alt="rate"
+                        />
+                    </div>
+                    <div class="reviews_info-description">
+                        Lorem Ipsum has been the industry's standard dummy text
+                        ever since the 1500s.
+                    </div>
+                    <div class="reviews_info-name">John Doe</div>
+                    <div class="reviews_info-job">Developer</div>
+                    <div class="reviews_buttons-wrapper">
+                        <button class="prev" onclick="moveSlide(-1)">
+                            &#10094;
+                        </button>
+                        <button class="next" onclick="moveSlide(1)">
+                            &#10095;
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="reviews">
+                <div class="reviews_img">
+                    <img
+                        src="https://img.freepik.com/free-photo/young-beautiful-woman-pink-warm-sweater-natural-look-smiling-portrait-isolated-long-hair_285396-896.jpg"
+                        alt="girl"
+                    />
+                </div>
+                <div class="reviews_info">
+                    <div class="reviews_info-title">Fantastic Quality</div>
+                    <div class="reviews_info-rate">
+                        <img
+                            src="/kursova/assets/img/rest/stars.png"
+                            alt="rate"
+                        />
+                    </div>
+                    <div class="reviews_info-description">
+                        It has survived not only five centuries, but also the
+                        leap into electronic typesetting.
+                    </div>
+                    <div class="reviews_info-name">Jane Smith</div>
+                    <div class="reviews_info-job">Manager</div>
+                    <div class="reviews_buttons-wrapper">
+                        <button class="prev" onclick="moveSlide(-1)">
+                            &#10094;
+                        </button>
+                        <button class="next" onclick="moveSlide(1)">
+                            &#10095;
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="footer_info">
+                <div class="footer_info-top">
+                    <div class="footer_info-top-title">
+                        Order a consultation to Get Our Letest News
+                    </div>
+                    <div class="footer_search">
+                        <input
+                            class="footer_search-input"
+                            type="text"
+                            placeholder="Enter email..."
+                        />
+                        <button class="btn-brown sub-btn open-modal">
+                            Order a consultation
+                        </button>
+                    </div>
+                </div>
+                <hr class="footer_info-hr" />
+                <div class="footer_info-bottom">
+                    <div class="footer_info-bottom-column">
+                        <a href="/"
+                            ><div class="footer_info-bottom-column-logo">
+                                Dudeshape
+                            </div></a
+                        >
+                        <div class="footer_info-bottom-column-description">
+                            Lorem Ipsum is simply dummy text of the printing and
+                            typesetting industry. Lorem Ipsum has been the
+                            industry's standard dummy
+                        </div>
+                    </div>
+                    <div class="footer_links-wrapper">
+                        <div class="footer_info-bottom-column">
+                            <div class="footer_info-bottom-column-title">
+                                Quick Link
+                            </div>
+                            <ul class="footer_info-bottom-column-list">
+                                <li class="footer_info-bottom-column-list-item">
+                                    <a href="/index.html">Home</a>
+                                </li>
+                                <li class="footer_info-bottom-column-list-item">
+                                    <a href="/products.html">Products</a>
+                                </li>
+                                <li class="footer_info-bottom-column-list-item">
+                                    <a href="">About Us</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer_info-bottom-column">
+                            <div class="footer_info-bottom-column-title">
+                                Contact Us
+                            </div>
+                            <ul class="footer_info-bottom-column-list">
+                                <li class="footer_info-bottom-column-list-item">
+                                    <a
+                                        href="email:oyasimnaeem@email.com"
+                                        style="overflow-wrap: break-word"
+                                        >oyasimnaeem@email.com</a
+                                    >
+                                </li>
+                                <li class="footer_info-bottom-column-list-item">
+                                    <a href="tel:097-409-7777"
+                                        >+380 97 4097 777</a
+                                    >
+                                </li>
+                                <li class="footer_info-bottom-column-list-item">
+                                    <div
+                                        class="footer_info-bottom-column-list-item-imgs"
+                                    >
+                                        <a href=""
+                                            ><img
+                                                src="/kursova/assets/svg/twitter.svg"
+                                                alt="twitter"
+                                        /></a>
+                                        <a href=""
+                                            ><img
+                                                src="/kursova/assets/svg/facebook.svg"
+                                                alt="facebook"
+                                        /></a>
+                                        <a href=""
+                                            ><img
+                                                src="/kursova/assets/svg/instagram.svg"
+                                                alt="instagram"
+                                        /></a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2 class="modal-content-title">
+                    Do you want to get a consultation?
+                </h2>
+                <form id="contactForm" action="/send-email" method="POST">
+                    <p class="modal-title">
+                        Leave your data, we will write/call you soon!
+                    </p>
+                    <div class="modal-field">
+                        <label class="modal-label" for="user-name">Name</label>
+                        <div class="modal-input-wrap">
+                            <input
+                                class="modal-input"
+                                type="text"
+                                id="user-name"
+                                name="name"
+                                required
+                            />
+                        </div>
+                    </div>
+                    <div class="modal-field">
+                        <label class="modal-label" for="user-tel"
+                            >Phone number</label
+                        >
+                        <div class="modal-input-wrap">
+                            <input
+                                class="modal-input"
+                                type="tel"
+                                id="user-tel"
+                                name="phone"
+                                required
+                            />
+                        </div>
+                    </div>
+                    <div class="modal-field">
+                        <label class="modal-label" for="user-email"
+                            >Email</label
+                        >
+                        <div class="modal-input-wrap">
+                            <input
+                                class="modal-input"
+                                type="email"
+                                id="user-email"
+                                name="email"
+                                required
+                            />
+                        </div>
+                    </div>
+                    <div class="modal-field">
+                        <label class="modal-label" for="user-comment"
+                            >Message</label
+                        >
+                        <textarea
+                            class="user-comment"
+                            name="message"
+                            id="user-comment"
+                            required
+                        ></textarea>
+                    </div>
+                    <div class="accept-box">
+                        <input
+                            class="input-accept visually-hidden"
+                            type="checkbox"
+                            id="accept"
+                            name="accept"
+                            value="accept"
+                            required
+                        />
+                        <label class="label-accept" for="accept">
+                            <span
+                                >I agree with the mailing and accept the
+                                <a href="#" class="accept-link"
+                                    >Terms of the Agreement</a
+                                ></span
+                            >
+                        </label>
+                    </div>
+                    <button class="btn btn-submit btn-brown" type="submit">
+                        Send
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <button id="backToTopBtn" title="Go to top">↑</button>
+
+        <script src="/kursova/js/modal.js"></script>
+        <script src="/kursova/js/scroll.js"></script>
+        <script src="/kursova/js/slider.js"></script>
+        <script src="/kursova/js/burger.js"></script>
+        <script src="/kursova/js/toTop.js"></script>
+        <script
+            type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+        ></script>
+        <script src="/kursova/js/form.js"></script>
+    </body>
+</html>

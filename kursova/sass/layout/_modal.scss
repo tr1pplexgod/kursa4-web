@@ -1,0 +1,80 @@
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+
+    &-content {
+        position: relative;
+        background-color: #fff;
+        margin: 2% auto;
+        padding: 50px;
+        border-radius: 8px;
+        width: 60%;
+        max-width: 900px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+        &-title {
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+    }
+
+    &-title {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    &-field {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    &-label {
+        margin-bottom: 5px;
+    }
+
+    &-input {
+        padding: 0px 10px;
+        font-size: 18px;
+        width: 300px;
+        height: 40px;
+        border: 1px solid #685a522a;
+    }
+}
+
+.input-accept {
+    margin: 10px 10px 10px 0;
+}
+
+.user-comment {
+    border: 1px solid #685a522a;
+    padding: 10px;
+    width: 400px;
+    height: 150px;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 28px;
+    color: #402f2c;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
+.accept-box {
+    font-size: 16px;
+}

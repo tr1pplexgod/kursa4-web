@@ -1,0 +1,344 @@
+@media (max-width: 1348px) {
+    .beauty {
+        &_img {
+            & img {
+                width: 500px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .main {
+        justify-content: center;
+
+        &_info {
+            width: 100%;
+        }
+        &_search {
+            display: none;
+        }
+        &_img {
+            display: none;
+        }
+    }
+    .beauty {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        &_img {
+            display: none;
+        }
+    }
+    .footer {
+        padding: 70px;
+        &_info {
+            &-bottom {
+                justify-content: space-between;
+            }
+        }
+
+        &_search {
+            &-input {
+                display: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .burger {
+        display: block;
+    }
+    .header {
+        &_menu {
+            display: none;
+        }
+    }
+    .main {
+        &_img {
+            & img {
+                display: none;
+            }
+        }
+    }
+    .stat {
+        padding: 40px;
+        &_list {
+            &-item {
+                &-title {
+                    font-size: 45px;
+                }
+                &-subtitle {
+                    font-size: 22px;
+                }
+            }
+        }
+    }
+    .products {
+        &_info {
+            flex-direction: column;
+            align-items: baseline;
+
+            &-subtitles {
+                margin-bottom: 10px;
+            }
+
+            &-linker {
+                margin-bottom: 30px;
+            }
+        }
+    }
+    .beauty {
+        flex-direction: column;
+    }
+    .footer {
+        &_info {
+            &-bottom {
+                &-column {
+                    &-description {
+                        width: auto;
+                    }
+                }
+            }
+        }
+        &_links {
+            &-wrapper {
+                gap: 70px;
+            }
+        }
+    }
+}
+
+@media (max-width: 840px) {
+    .main {
+        &_title {
+            width: auto;
+        }
+        &_info {
+            padding: 0 60px;
+        }
+    }
+    .reviews {
+        &_img {
+            img {
+                width: 400px;
+            }
+        }
+    }
+    .stat {
+        padding: 40px;
+        &_list {
+            &-item {
+                &-title {
+                    font-size: 35px;
+                }
+                &-subtitle {
+                    font-size: 22px;
+                }
+            }
+        }
+    }
+    .footer {
+        &_info {
+            &-bottom {
+                gap: 20px;
+            }
+        }
+        &_links {
+            &-wrapper {
+                align-self: start;
+                gap: 50px;
+            }
+        }
+    }
+    .infinity {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        padding: 0px 40px;
+    }
+    .main {
+        &_subtitle {
+            width: auto;
+        }
+    }
+    .products {
+        &_list {
+            &-item {
+                width: 400px;
+                & img {
+                    width: 400px;
+                }
+                &-footer {
+                    flex-direction: column;
+                    gap: 30px;
+                }
+            }
+        }
+    }
+    .stat {
+        padding: 40px;
+        &_list {
+            &-item {
+                &-title {
+                    font-size: 35px;
+                }
+                &-subtitle {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+    .beauty {
+        flex-direction: column;
+        &_info {
+            &-title {
+                width: auto;
+            }
+            &-description {
+                width: auto;
+            }
+        }
+    }
+    .reviews {
+        &_img {
+            display: none;
+        }
+    }
+    .footer {
+        &_info {
+            &-top {
+                flex-direction: column;
+                padding-bottom: 40px;
+            }
+            &-bottom {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    }
+    .sub-btn {
+        margin-top: 15px;
+        left: 10px;
+        width: 250px;
+        height: auto;
+    }
+
+    .modal {
+        &-input {
+            width: 100%;
+        }
+    }
+    .user-comment {
+        width: auto;
+    }
+}
+
+@media (max-width: 425px) {
+    .header {
+        padding-left: 15px;
+
+        &_icons {
+            gap: 5px;
+        }
+    }
+    .main {
+        &_title {
+            font-size: 40px;
+        }
+    }
+    .beauty {
+        padding: 0px 20px;
+        &_info {
+            &-title {
+                width: auto;
+                line-height: 50px;
+                font-size: 40px;
+            }
+        }
+    }
+    .reviews {
+        padding: 0px 40px;
+    }
+    .products {
+        padding: 40px;
+        &_title {
+            font-size: 46px;
+        }
+        &_list {
+            &-item {
+                width: 300px;
+                & img {
+                    width: 300px;
+                }
+            }
+        }
+    }
+    .stat {
+        padding: 20px;
+        &_list {
+            flex-direction: column;
+            &-item {
+                &-title {
+                    margin: 0px 0px 10px 0px;
+                    font-size: 40px;
+                }
+                &-subtitle {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+    .footer {
+        padding: 40px 20px;
+        &_links {
+            &-wrapper {
+                gap: 10px;
+            }
+        }
+    }
+    .modal {
+        &-content {
+            &-title {
+                font-size: 35px;
+            }
+        }
+        &-input {
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 320px) {
+    .beauty {
+        padding: 0px 20px;
+        &_info {
+            &-title {
+                width: auto;
+                line-height: 50px;
+                font-size: 40px;
+            }
+        }
+    }
+    .footer {
+        padding: 20px !important;
+        &_links {
+            &-wrapper {
+                gap: 20px !important;
+            }
+        }
+        &_info {
+            &-top {
+                flex-direction: column;
+                &-title {
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+}
