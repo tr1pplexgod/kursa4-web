@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./kursova/sass/css/styles.min.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+            integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"
+            rel="stylesheet"
+        />
+        <title>Dudeshape - products</title>
+    </head>
+    <body>
+        <header>
+            <div class="header">
+                <div class="header_logo"><a href="/">Dudeshape</a></div>
+                <ul class="header_menu burger-menu">
+                    <li class="header_menu-item"><a href="/">Home</a></li>
+                    <li class="header_menu-item">
+                        <a href="/products.html">Products</a>
+                    </li>
+                    <li class="header_menu-item"><a href="">About Us</a></li>
+                    <li class="header_menu-item"><a href="">Contact Us</a></li>
+                </ul>
+                <ul class="header_icons">
+                    <li class="header_icons-item">
+                        <img
+                            src="./kursova/assets/svg/Profile.svg"
+                            alt="account"
+                        />
+                    </li>
+                    <li class="header_icons-item">
+                        <img src="./kursova/assets/svg/Buy.svg" alt="cart" />
+                    </li>
+                    <li class="header_icons-item">
+                        <img
+                            class="burger"
+                            src="./kursova/assets/svg/Burger.svg"
+                            alt="burger"
+                            onclick="toggleMenu()"
+                        />
+                    </li>
+                </ul>
+
+            <div
+                id="burger-overlay"
+                class="burger-overlay"
+                onclick="toggleMenu()"
+            >
+                <nav class="burger-nav">
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/products.html">Products</a></li>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <div>
+                <div class="products_tubs">
+                    <ul class="products_tubs-list">
+                        <li class="products_tubs-list-tub active">All</li>
+                        <li class="products_tubs-list-tub">Face</li>
+                        <li class="products_tubs-list-tub">Body</li>
+                        <li class="products_tubs-list-tub">Gel</li>
+                        <li class="products_tubs-list-tub">Scrubs</li>
+                    </ul>
+                </div>
+
+                <div class="products_wrapper">
+                    <ul class="products_list">
+                        <li class="products_list-item" data-category="face">
+                            <div>
+                                <img
+                                    src="./kursova/assets/img/products/product1.jpg"
+                                    alt="product1"
+                                />
+                                <div class="products_list-item-wrapper">
+                                    <div class="products_list-item-title">
+                                        Cosmetic products (face)
+                                    </div>
+                                    <div class="products_list-item-subtitle">
+                                        Lorem Ipsum is simply dummy text of the
+                                        printing and typesetting industry. Lorem
+                                        Ipsum has been the industry's standard
+                                        dummy
+                                    </div>
+                                    <div class="products_list-item-footer">
+                                        <div
+                                            class="products_list-item-footer-buttons"
+                                        >
+                                            <button class="btn btn-brown">
+                                                Buy Now
+                                            </button>
+                                            <button class="btn btn-light">
+                                                Add To Cart
+                                            </button>
+                                        </div>
+                                        <div
+                                            class="products_list-item-footer-price"
+                                        >
+                                            $120
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="products_list-item" data-category="face">
+                            <div>
+                                <img
+                                    src="./kursova/assets/img/products/product1.jpg"
+                                    alt="product1"
+                                />
+                                <div class="products_list-item-wrapper">
+                                    <div class="products_list-item-title">
+                                        Cosmetic products (face)
+                                    </div>
+                                    <div class="products_list-item-subtitle">
+                                        Lorem Ipsum is simply dummy text of the
+                                        printing and typesetting industry. Lorem
+                                        Ipsum has been the industry's standard
+                                        dummy
+                                    </div>
+                                    <div class="products_list-item-footer">
+                                        <div
+                                            class="products_list-item-footer-buttons"
+                                        >
+                                            <button class="btn btn-brown">
+                                                Buy Now
+                                            </button>
+                                            <button class="btn btn-light">
+                                                Add To Cart
+                                            </button>
+                                        </div>
+                                        <div
+                                            class="products_list-item-footer-price"
+                                        >
+                                            $120
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="products_list-item" data-category="body">
+                            <div>
+                                <img
+                                    src="./kursova/assets/img/products/product1.jpg"
+                                    alt="product1"
+                                />
+                                <div class="products_list-item-wrapper">
+                                    <div class="products_list-item-title">
+                                        Cosmetic products (body)
+                                    </div>
+                                    <div class="products_list-item-subtitle">
+                                        Lorem Ipsum is simply dummy text of the
+                                        printing and typesetting industry. Lorem
+                                        Ipsum has been the industry's standard
+                                        dummy
+                                    </div>
+                                    <div class="products_list-item-footer">
+                                        <div
+                                            class="products_list-item-footer-buttons"
+                                        >
+                                            <button class="btn btn-brown">
+                                                Buy Now
+                                            </button>
+                                            <button class="btn btn-light">
+                                                Add To Cart
+                                            </button>
+                                        </div>
+                                        <div
+                                            class="products_list-item-footer-price"
+                                        >
+                                            $120
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="products_list-item" data-category="body">
+                            <div>
+                                <img
+                                    src="./kursova/assets/img/products/product1.jpg"
+                                    alt="product1"
+                                />
+                                <div class="products_list-item-wrapper">
+                                    <div class="products_list-item-title">
+                                        Cosmetic products (body)
+                                    </div>
+                                    <div class="products_list-item-subtitle">
+                                        Lorem Ipsum is simply dummy text of the
+                                        printing and typesetting industry. Lorem
+                                        Ipsum has been the industry's standard
+                                        dummy
+                                    </div>
+                                    <div class="products_list-item-footer">
+                                        <div
+                                            class="products_list-item-footer-buttons"
+                                        >
+                                            <button class="btn btn-brown">
+                                                Buy Now
+                                            </button>
+                                            <button class="btn btn-light">
+                                                Add To Cart
+                                            </button>
+                                        </div>
+                                        <div
+                                            class="products_list-item-footer-price"
+                                        >
+                                            $120
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="products_list-item" data-category="body">
+                            <div>
+                                <img
+                                    src="./kursova/assets/img/products/product1.jpg"
+                                    alt="product1"
+                                />
+                                <div class="products_list-item-wrapper">
+                                    <div class="products_list-item-title">
+                                        Cosmetic products (body)
+                                    </div>
+                                    <div class="products_list-item-subtitle">
+                                        Lorem Ipsum is simply dummy text of the
+                                        printing and typesetting industry. Lorem
+                                        Ipsum has been the industry's standard
+                                        dummy
+                                    </div>
+                                    <div class="products_list-item-footer">
+                                        <div
+                                            class="products_list-item-footer-buttons"
+                                        >
+                                            <button class="btn btn-brown">
+                                                Buy Now
+                                            </button>
+                                            <button class="btn btn-light">
+                                                Add To Cart
+                                            </button>
+                                        </div>
+                                        <div
+                                            class="products_list-item-footer-price"
+                                        >
+                                            $120
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="products_list-item" data-category="face">
+                            <div>
+                                <img
+                                    src="./kursova/assets/img/products/product1.jpg"
+                                    alt="product1"
+                                />
+                                <div class="products_list-item-wrapper">
+                                    <div class="products_list-item-title">
+                                        Cosmetic products (face)
+                                    </div>
+                                    <div class="products_list-item-subtitle">
+                                        Lorem Ipsum is simply dummy text of the
+                                        printing and typesetting industry. Lorem
+                                        Ipsum has been the industry's standard
+                                        dummy
+                                    </div>
+                                    <div class="products_list-item-footer">
+                                        <div
+                                            class="products_list-item-footer-buttons"
+                                        >
+                                            <button class="btn btn-brown">
+                                                Buy Now
+                                            </button>
+                                            <button class="btn btn-light">
+                                                Add To Cart
+                                            </button>
+                                        </div>
+                                        <div
+                                            class="products_list-item-footer-price"
+                                        >
+                                            $120
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="products_list-item" data-category="scrubs">
+                            <div>
+                                <img
+                                    src="./kursova/assets/img/products/product1.jpg"
+                                    alt="product1"
+                                />
+                                <div class="products_list-item-wrapper">
+                                    <div class="products_list-item-title">
+                                        Cosmetic products (scrubs)
+                                    </div>
+                                    <div class="products_list-item-subtitle">
+                                        Lorem Ipsum is simply dummy text of the
+                                        printing and typesetting industry. Lorem
+                                        Ipsum has been the industry's standard
+                                        dummy
+                                    </div>
+                                    <div class="products_list-item-footer">
+                                        <div
+                                            class="products_list-item-footer-buttons"
+                                        >
+                                            <button class="btn btn-brown">
+                                                Buy Now
+                                            </button>
+                                            <button class="btn btn-light">
+                                                Add To Cart
+                                            </button>
+                                        </div>
+                                        <div
+                                            class="products_list-item-footer-price"
+                                        >
+                                            $120
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="products_list-item" data-category="body">
+                            <div>
+                                <img
+                                    src="./kursova/assets/img/products/product1.jpg"
+                                    alt="product1"
+                                />
+                                <div class="products_list-item-wrapper">
+                                    <div class="products_list-item-title">
+                                        Cosmetic products (body)
+                                    </div>
+                                    <div class="products_list-item-subtitle">
+                                        Lorem Ipsum is simply dummy text of the
+                                        printing and typesetting industry. Lorem
+                                        Ipsum has been the industry's standard
+                                        dummy
+                                    </div>
+                                    <div class="products_list-item-footer">
+                                        <div
+                                            class="products_list-item-footer-buttons"
+                                        >
+                                            <button class="btn btn-brown">
+                                                Buy Now
+                                            </button>
+                                            <button class="btn btn-light">
+                                                Add To Cart
+                                            </button>
+                                        </div>
+                                        <div
+                                            class="products_list-item-footer-price"
+                                        >
+                                            $120
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="products_list-item" data-category="gel">
+                            <div>
+                                <img
+                                    src="./kursova/assets/img/products/product1.jpg"
+                                    alt="product1"
+                                />
+                                <div class="products_list-item-wrapper">
+                                    <div class="products_list-item-title">
+                                        Cosmetic products (gel)
+                                    </div>
+                                    <div class="products_list-item-subtitle">
+                                        Lorem Ipsum is simply dummy text of the
+                                        printing and typesetting industry. Lorem
+                                        Ipsum has been the industry's standard
+                                        dummy
+                                    </div>
+                                    <div class="products_list-item-footer">
+                                        <div
+                                            class="products_list-item-footer-buttons"
+                                        >
+                                            <button class="btn btn-brown">
+                                                Buy Now
+                                            </button>
+                                            <button class="btn btn-light">
+                                                Add To Cart
+                                            </button>
+                                        </div>
+                                        <div
+                                            class="products_list-item-footer-price"
+                                        >
+                                            $120
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="products_list-item" data-category="face">
+                            <div>
+                                <img
+                                    src="./kursova/assets/img/products/product1.jpg"
+                                    alt="product1"
+                                />
+                                <div class="products_list-item-wrapper">
+                                    <div class="products_list-item-title">
+                                        Cosmetic products (face)
+                                    </div>
+                                    <div class="products_list-item-subtitle">
+                                        Lorem Ipsum is simply dummy text of the
+                                        printing and typesetting industry. Lorem
+                                        Ipsum has been the industry's standard
+                                        dummy
+                                    </div>
+                                    <div class="products_list-item-footer">
+                                        <div
+                                            class="products_list-item-footer-buttons"
+                                        >
+                                            <button class="btn btn-brown">
+                                                Buy Now
+                                            </button>
+                                            <button class="btn btn-light">
+                                                Add To Cart
+                                            </button>
+                                        </div>
+                                        <div
+                                            class="products_list-item-footer-price"
+                                        >
+                                            $120
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="products_list-item" data-category="scrubs">
+                            <div>
+                                <img
+                                    src="./kursova/assets/img/products/product1.jpg"
+                                    alt="product1"
+                                />
+                                <div class="products_list-item-wrapper">
+                                    <div class="products_list-item-title">
+                                        Cosmetic products (scrubs)
+                                    </div>
+                                    <div class="products_list-item-subtitle">
+                                        Lorem Ipsum is simply dummy text of the
+                                        printing and typesetting industry. Lorem
+                                        Ipsum has been the industry's standard
+                                        dummy
+                                    </div>
+                                    <div class="products_list-item-footer">
+                                        <div
+                                            class="products_list-item-footer-buttons"
+                                        >
+                                            <button class="btn btn-brown">
+                                                Buy Now
+                                            </button>
+                                            <button class="btn btn-light">
+                                                Add To Cart
+                                            </button>
+                                        </div>
+                                        <div
+                                            class="products_list-item-footer-price"
+                                        >
+                                            $120
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="products_list-item" data-category="face">
+                            <div>
+                                <img
+                                    src="./kursova/assets/img/products/product1.jpg"
+                                    alt="product1"
+                                />
+                                <div class="products_list-item-wrapper">
+                                    <div class="products_list-item-title">
+                                        Cosmetic products (face)
+                                    </div>
+                                    <div class="products_list-item-subtitle">
+                                        Lorem Ipsum is simply dummy text of the
+                                        printing and typesetting industry. Lorem
+                                        Ipsum has been the industry's standard
+                                        dummy
+                                    </div>
+                                    <div class="products_list-item-footer">
+                                        <div
+                                            class="products_list-item-footer-buttons"
+                                        >
+                                            <button class="btn btn-brown">
+                                                Buy Now
+                                            </button>
+                                            <button class="btn btn-light">
+                                                Add To Cart
+                                            </button>
+                                        </div>
+                                        <div
+                                            class="products_list-item-footer-price"
+                                        >
+                                            $120
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="products_list-item" data-category="face">
+                            <div>
+                                <img
+                                    src="./kursova/assets/img/products/product1.jpg"
+                                    alt="product1"
+                                />
+                                <div class="products_list-item-wrapper">
+                                    <div class="products_list-item-title">
+                                        Cosmetic products (face)
+                                    </div>
+                                    <div class="products_list-item-subtitle">
+                                        Lorem Ipsum is simply dummy text of the
+                                        printing and typesetting industry. Lorem
+                                        Ipsum has been the industry's standard
+                                        dummy
+                                    </div>
+                                    <div class="products_list-item-footer">
+                                        <div
+                                            class="products_list-item-footer-buttons"
+                                        >
+                                            <button class="btn btn-brown">
+                                                Buy Now
+                                            </button>
+                                            <button class="btn btn-light">
+                                                Add To Cart
+                                            </button>
+                                        </div>
+                                        <div
+                                            class="products_list-item-footer-price"
+                                        >
+                                            $120
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="products_list-item" data-category="gel">
+                            <div>
+                                <img
+                                    src="./kursova/assets/img/products/product1.jpg"
+                                    alt="product1"
+                                />
+                                <div class="products_list-item-wrapper">
+                                    <div class="products_list-item-title">
+                                        Cosmetic products (gel)
+                                    </div>
+                                    <div class="products_list-item-subtitle">
+                                        Lorem Ipsum is simply dummy text of the
+                                        printing and typesetting industry. Lorem
+                                        Ipsum has been the industry's standard
+                                        dummy
+                                    </div>
+                                    <div class="products_list-item-footer">
+                                        <div
+                                            class="products_list-item-footer-buttons"
+                                        >
+                                            <button class="btn btn-brown">
+                                                Buy Now
+                                            </button>
+                                            <button class="btn btn-light">
+                                                Add To Cart
+                                            </button>
+                                        </div>
+                                        <div
+                                            class="products_list-item-footer-price"
+                                        >
+                                            $120
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="products_list-item" data-category="gel">
+                            <div>
+                                <img
+                                    src="./kursova/assets/img/products/product1.jpg"
+                                    alt="product1"
+                                />
+                                <div class="products_list-item-wrapper">
+                                    <div class="products_list-item-title">
+                                        Cosmetic products (gel)
+                                    </div>
+                                    <div class="products_list-item-subtitle">
+                                        Lorem Ipsum is simply dummy text of the
+                                        printing and typesetting industry. Lorem
+                                        Ipsum has been the industry's standard
+                                        dummy
+                                    </div>
+                                    <div class="products_list-item-footer">
+                                        <div
+                                            class="products_list-item-footer-buttons"
+                                        >
+                                            <button class="btn btn-brown">
+                                                Buy Now
+                                            </button>
+                                            <button class="btn btn-light">
+                                                Add To Cart
+                                            </button>
+                                        </div>
+                                        <div
+                                            class="products_list-item-footer-price"
+                                        >
+                                            $120
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="footer_info">
+                <div class="footer_info-top">
+                    <div class="footer_info-top-title">
+                        Order a consultation to Get Our Letest News
+                    </div>
+                    <div class="footer_search">
+                        <input
+                            class="footer_search-input"
+                            type="text"
+                            placeholder="Enter email..."
+                        />
+                        <button class="btn-brown sub-btn open-modal">
+                            Order a consultation
+                        </button>
+                    </div>
+                </div>
+                <hr class="footer_info-hr" />
+                <div class="footer_info-bottom">
+                    <div class="footer_info-bottom-column">
+                        <a href="/"
+                            ><div class="footer_info-bottom-column-logo">
+                                Dudeshape
+                            </div></a
+                        >
+                        <div class="footer_info-bottom-column-description">
+                            Lorem Ipsum is simply dummy text of the printing and
+                            typesetting industry. Lorem Ipsum has been the
+                            industry's standard dummy
+                        </div>
+                    </div>
+                    <div class="footer_links-wrapper">
+                        <div class="footer_info-bottom-column">
+                            <div class="footer_info-bottom-column-title">
+                                Quick Link
+                            </div>
+                            <ul class="footer_info-bottom-column-list">
+                                <li class="footer_info-bottom-column-list-item">
+                                    <a href="/index.html">Home</a>
+                                </li>
+                                <li class="footer_info-bottom-column-list-item">
+                                    <a href="/products.html">Products</a>
+                                </li>
+                                <li class="footer_info-bottom-column-list-item">
+                                    <a href="">About Us</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer_info-bottom-column">
+                            <div class="footer_info-bottom-column-title">
+                                Contact Us
+                            </div>
+                            <ul class="footer_info-bottom-column-list">
+                                <li class="footer_info-bottom-column-list-item">
+                                    <a
+                                        href="email:oyasimnaeem@email.com"
+                                        style="overflow-wrap: break-word"
+                                        >oyasimnaeem@email.com</a
+                                    >
+                                </li>
+                                <li class="footer_info-bottom-column-list-item">
+                                    <a href="tel:097-409-7777"
+                                        >+380 97 4097 777</a
+                                    >
+                                </li>
+                                <li class="footer_info-bottom-column-list-item">
+                                    <div
+                                        class="footer_info-bottom-column-list-item-imgs"
+                                    >
+                                        <a href=""
+                                            ><img
+                                                src="./kursova/assets/svg/twitter.svg"
+                                                alt="twitter"
+                                        /></a>
+                                        <a href=""
+                                            ><img
+                                                src="./kursova/assets/svg/facebook.svg"
+                                                alt="facebook"
+                                        /></a>
+                                        <a href=""
+                                            ><img
+                                                src="./kursova/assets/svg/instagram.svg"
+                                                alt="instagram"
+                                        /></a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2 class="modal-content-title">
+                    Do you want to get a consultation?
+                </h2>
+                <form action="/send" method="POST">
+                    <p class="modal-title">
+                        Leave your data, we will write/call you in Telegram!
+                    </p>
+                    <div class="modal-field">
+                        <label class="modal-label" for="user-name">Name</label>
+                        <input
+                            class="modal-input"
+                            type="text"
+                            id="user-name"
+                            name="userName"
+                            required
+                        />
+                    </div>
+                    <div class="modal-field">
+                        <label class="modal-label" for="user-tel"
+                            >Phone number</label
+                        >
+                        <input
+                            class="modal-input"
+                            type="tel"
+                            id="user-tel"
+                            name="userTel"
+                            required
+                        />
+                    </div>
+                    <div class="modal-field">
+                        <label class="modal-label" for="user-email"
+                            >Email</label
+                        >
+                        <input
+                            class="modal-input"
+                            type="email"
+                            id="user-email"
+                            name="userEmail"
+                            required
+                        />
+                    </div>
+                    <div class="modal-field">
+                        <label class="modal-label" for="user-comment"
+                            >Message</label
+                        >
+                        <textarea
+                            class="user-comment"
+                            id="user-comment"
+                            name="userComment"
+                            placeholder="Input your text here..."
+                        ></textarea>
+                    </div>
+                    <button class="btn btn-submit btn-brown" type="submit">
+                        Send
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <button id="backToTopBtn" title="Go to top">↑</button>
+
+        <script src="./kursova/js/modal.js" defer></script>
+        <script src="./kursova/js/tubs.js" defer></script>
+        <script src="./kursova/js/burger.js"></script>
+        <script src="./kursova/js/toTop.js"></script>
+    </body>
+</html>

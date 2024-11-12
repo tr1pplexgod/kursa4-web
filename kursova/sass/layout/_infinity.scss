@@ -1,0 +1,26 @@
+.infinity {
+    border-top: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
+    margin: 130px 100px;
+    padding: 0 100px;
+    overflow: hidden;
+    position: relative;
+
+    &_list {
+        margin: 40px 0;
+        display: flex;
+        justify-content: flex-start;
+        gap: 10%;
+        animation: scroll 20s linear infinite;
+    }
+}
+
+/* Анімація */
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}

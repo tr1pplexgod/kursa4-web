@@ -1,0 +1,28 @@
+.beauty {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    padding: 0 100px;
+    margin-bottom: 130px;
+
+    &_info {
+        &-title {
+            width: 520px;
+            font-size: 56px;
+            font-weight: 500;
+            line-height: 70px;
+            margin-bottom: 20px;
+        }
+
+        &-description {
+            width: 608px;
+            font-size: 20px;
+            line-height: 32px;
+            color: #555555;
+            margin-bottom: 50px;
+        }
+    }
+
+    &_img {
+    }
+}
